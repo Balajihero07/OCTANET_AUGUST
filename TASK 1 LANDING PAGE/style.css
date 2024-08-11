@@ -1,0 +1,330 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.main{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 95vh;
+    
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-color:lightpink; 
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    padding: 5px;
+}
+.nav a:hover{
+    background-color: black;
+    color: white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 800px;
+    animation: slideIn 2s ease-out;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+.imageflower img{
+    width: 300px;
+    height: 400px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    margin: 20px;
+    
+}
+.contenttext{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+}
+.imageflower{
+    display: flex;
+    flex-direction: row;
+}
+#heightabout{
+    margin-top: 120px;
+    height: 300px;
+    width: 200px;
+}
+.step{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254 247 245);
+    justify-content: space-around;
+}
+.headtext{
+    padding-top: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.step1{
+    width: 230px;
+    height: auto;
+    border-left: 2px solid #ff6e4e;
+    padding: 10px;
+}
+.headtext h5{
+    color: #ff6e4e;
+}
+.step1 h4{
+    color: #ff6e4e;
+}
+.salesimage{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+.imagebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imageboxcontent{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.specialoffer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #180000;
+    padding: 40px;
+}
+.specialoffer img{
+     border-top-left-radius: 260px;
+     border-bottom-right-radius: 260px;
+}
+.specialoffercontent{
+    padding: 100px;
+}
+.salesbox{
+    background-color: #f2dfdb;
+}
+.reviewconsumer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+.reviewcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+.calltoaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #180000;
+    padding: 50px;
+}
+.calltoaction img{
+    border-top-right-radius:170px;
+    border-bottom-left-radius: 170px;
+}
+.ctacontent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #f2dfdb;
+}
+.footer-content{
+    padding: 30px;
+    align-items: center;
+    width: 400px;
+}
+.links{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-items: flex-start
+}
+.links a{
+    text-decoration: none;
+    color: #ff6e4e;
+}
+.contactas{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-around;
+}
+button{
+    background-color: #ff6e4e;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px; font-size: larger;
+}
+button:hover{
+    font-size: small;
+}
+marquee{
+    color: white;
+    font-size: larger;
+
+}
+@media screen and (max-width:520px){
+    .main{
+        height: 500px;
+    }
+    .text{
+        padding: 50px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #heightabout{
+        height: 200px;
+        width: 150px;
+        margin-top: 100px;
+    }
+    .imageflower img{
+        width: 200px;
+        height: 300px;
+        border-top-right-radius: 80px;
+        border-top-left-radius: 80px;
+        margin: 10px;
+        
+    }
+    .contenttext{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        font: 1em sans-serif;
+        align-items: center;
+        padding: 20px;
+    }
+    .step{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        }
+    .step1{
+        width: 300px;
+        height: auto;
+        border-left: 2px solid black;
+        padding: 10px;
+    }
+    .headtext{
+        padding: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .salesimage{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialoffer{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 100%;
+    }
+    .calltoaction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .reviewconsumer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialoffer{
+        width: 100%;
+        padding: 0px;
+    }
+    .specialofferimage img{
+        width: 80%;
+        border-top-left-radius: 20px;
+        padding-top:20px ;
+        padding-left: 20px;
+    }
+    .calltoaction img{
+        width: 80%;
+        border-top-right-radius:20px ;
+        padding-top: 20px;
+    }
+    .calltoaction{
+        width: 100%;
+        padding: 0px;
+    }
+    .consumer{
+        padding: 10px;
+    }
+}
