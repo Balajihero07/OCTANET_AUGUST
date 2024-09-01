@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+	input {width:450;	
+		height:70;
+		font-size:35;
+		border:3px solid gray;}
+		
+	td {text-align:center;
+		font-size:30px;
+		border-radius:20px;
+		cursor:pointer;
+		width:25%;
+		box-shadow:2px 2px 2px}
+		
+	td:hover{background:black;color:white}
+	
+</style>
+</head>
+<body>
+	<center>
+	<div style="width:450px;
+		height:550px;
+		border:5px solid gray;
+		background-color:gray;
+		box-shadow:5px 5px 20px;
+		border-radius:20px">
+	<input type=text id=disp><br><br>
+	<table width=100% height=85% border=1 cellspacing=25>
+	    <td colspan=3>
+		<td onclick=disp.value=''>AC</td>
+		<tr>
+			<td onclick=disp.value+=7>7</td>
+			<td onclick=disp.value+=8>8</td>
+			<td onclick=disp.value+=9>9</td>
+			<td onclick=disp.value+='+'>+</td>
+		</tr>
+		<tr>
+			<td onclick=disp.value+=6>6</td>
+			<td onclick=disp.value+=5>5</td>
+			<td onclick=disp.value+=4>4</td>
+			<td onclick=disp.value+='-'>-</td>
+		</tr>
+		<tr>
+			<td onclick=disp.value+=1>1</td>
+			<td onclick=disp.value+=2>2</td>
+			<td onclick=disp.value+=3>3</td>
+			<td onclick=disp.value+='*'>x</td>
+		</tr>
+		<tr>
+			<td onclick=disp.value+=0>0</td>
+			<td onclick=disp.value+='.'>.</td>
+			<td onclick=disp.value=eval(disp.value)>=</td>
+			<td onclick=disp.value+='/'>/</td>
+		</tr>
+	</div>
+	</center>
+</html>
+</body>
+
+		
+		
